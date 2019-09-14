@@ -49,16 +49,60 @@
       </nav>
     </header>
     <main>
-      <h1>Каталог</h1>
+      <h1 class="visually-hidden">Каталог</h1>
       <ol class="bredcrumbs">
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="">Инструменты</a></li>
         <li><a href="">Перфораторы</a></li>
       </ol>
       <h2>Перфораторы</h2>
-      <section class="filters">
-        <h3>Фильтр товаров</h3>
-      <!--Здесь будет форма фильтрации-->
+      <section>
+        <h2>Фильтр</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <!--Здесь будет форма фильтрации цены-->
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" name="" id="filter-interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="product-group" value="accumulator" id="filter-accumulator" checked>
+                <label for="filter-accumulator">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="product-group" value="electric" id="filter-electric" >
+                <label for="filter-electric">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">
+            Показать
+          </button>
+        </form>
+      </section>
       </section>
       <div>
         <p>Сортировка:</p>
@@ -250,7 +294,7 @@
           <li><a href="">Контакты</a></li></li>
         </ul>
       <div>
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
@@ -265,14 +309,14 @@
           </ul>
         </nav>
        <div>
-         <h2>Копирайт</h2>
+         <h2 class="visually-hidden">Копирайт</h2>
            <p>
              ©2010–2019 Компания «Техномарт»<br>
              Все права защищены
            </p>
        </div>
        <div>
-         <h2>Мы в соцсетях</h2>
+         <h2 class="visually-hidden">Мы в соцсетях</h2>
          <ul>
            <li><a href="#">Вконтакте</a></li>
            <li><a href="#">Фейсбук</a></li>
@@ -290,16 +334,11 @@
     </footer>
     <section>
       <h2>Товар добавлен в корзину!</h2>
-      <!-- Здесь будет форма -->
-    </section>
-    <section>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <button type="button">Оформить заказ</button>
+        <button type="button">Продолжить покупки</button>
+      </form>
       <button type="button">Закрыть</button>
-    </section>
-    <section>
-      <button type="button">Оформить заказ</button>
-    </section>
-    <section>
-      <button type="button">Продолжить покупки</button>
     </section>
   </body>
 </html>
