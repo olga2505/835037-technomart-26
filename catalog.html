@@ -12,10 +12,12 @@
             <img src="img/logo-technomart.svg" width="109" height="19"
              alt="Логотип техномарта Техномарт">
           </a>
-            <input type="search">Поиск</input>
-            <a href="">Закладки</a>
-            <a href="">Корзина</a>
-            <a href="">Оформить заказ</a>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <input type="search" placeholder="Поиск:">
+          </form>
+          <a href="">Закладки</a>
+          <a href="">Корзина</a>
+          <a href="">Оформить заказ</a>
         </div>
         <div>
           <p>Интернет-магазин строительных материалов и инструментов
@@ -59,7 +61,17 @@
       <section>
         <h2>Фильтр</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <!--Здесь будет форма фильтрации цены-->
+          <fieldset>
+            <legend>Цена:</legend>
+            <div>
+              <label></label>
+              <label></label>
+            </div>
+            <div>
+              <input type="text" placeholder="0">
+              <input type="text" placeholder="30000">
+            </div>
+          </fieldset>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
