@@ -65,6 +65,57 @@ a {
      background-color: #518534; 
 }
 
+.user-cart {
+    color: white;
+    background-color: #ee3643;
+}
+
+.catalog-by {
+    color: white;
+    font-size: 14px;
+    line-height: 1.29;
+    width: 135px;
+    height: 38px;
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #63a63e;
+    text-transform: uppercase;
+    font-weight: normal; 
+}
+
+.catalog-by:hover {
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #5fbb2d;
+    outline: none;
+}
+
+.catalog-by:active {
+    box-shadow: none;
+    background-color: #518534;
+    outline: none;
+}
+
+.catalog-save {
+    color: #32425c;
+    font-size: 14px;
+    line-height: 1.29;
+    width: 135px;
+    height: 38px;
+    border: solid 3px #63a63e;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.catalog-save:hover {
+    border: solid 3px #32425c;
+    outline: none;
+}
+
+.catalog-save:active {
+    opacity: 0.3;
+    outline: none;
+}
+
 .info-description {
     color: #ee3643;
     font-size: 16px;
@@ -293,6 +344,7 @@ a {
     font-size: 13px;
     color: #000000;
     line-height: 1.38;
+    text-transform: uppercase;
 }
 
 .catalog-title {
@@ -301,6 +353,7 @@ a {
     line-height: 1;
     color: #32425c;
     background-color: #f2f6f8;
+    font-weight: 400;
 }
 
 .filtr-list {
