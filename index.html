@@ -53,30 +53,30 @@
       <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
       <section>
         <h2 class="visually-hidden">Предложения магазина<h2>
-        <ul>
-          <li>
+        <ul class="items">
+          <li class="items-materials">
             <p>Материалы</p>
-            <a href="">На любой вкус</a>
+            <a  href="">На любой вкус</a>
           </li>
-          <li>
+          <li class="items-tools">
             <p>Инструменты</p>
             <a href="">На все случаи</a>
           </li>
-          <li>
+          <li class="items-equipment">
             <p>Техника</p>
-            <a href="">Для стройки</a>
+            <a  href="">Для стройки</a>
           </li>
         </ul>
         <div>
-          <ul>
+          <ul class="slider">
             <li>
-              <p>Дрели</p>
+              <h3>Дрели</h3>
               <p>Соседям на радость</p>
               <img src="img/slide-1.jpg" width="620" height="266"
               alt="Дрель">
             </li>
             <li>
-              <p>Перфораторы</p>
+              <h3>Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
               <img src="img/slide-2.jpg" width="620" height="266"
               alt="Дрель">
@@ -85,21 +85,23 @@
             <button type="button">Вперед</button>
           <a href="catalog.html">Открыть каталог</a>
         </div>
-        <ul>
-          <li>
+        <ul class="items">
+          <li class="items-discount">
             <p>Скидка 50%</p>
             <a href="">На 350 товаров</a>
           </li>
-          <li>
+          <li class="items-delivery">
             <p>Доставка</p>
             <a href="">Бесплатно</a>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Популярные товары</h2>
-        <a href="">Все популярные товары:</a>
-        <ul>
+      <section class="popular">
+        <div>
+          <h2>Популярные товары</h2>
+          <a class="popular-all" href="">Все популярные товары:</a>
+        </div>
+        <ul class="catalog">
           <li>
             <article>
               <h3>
@@ -112,8 +114,10 @@
                 <img src="img/product-4.jpg" width="218" height="170"
                   alt="Перфоратор BOSCH BFG 9000">
               </p>
-              <p>32500р.</p>
-              <p>25500 р.</p>
+              <p class="catalog-price-initial">32500р.</p>
+              <p class="catalog-price-final">25500 р.</p>
+              <button class="catalog-by" type="button">Купить</button>
+              <button class="catalog-save" type="button">В закладки</button>
             </article>
           </li>
           <li>
@@ -128,8 +132,10 @@
                 <img src="img/product-1.jpg" width="218" height="170"
                   alt="Перфоратор BOSCH BFG 3000">
               </p>
-              <p>22500р.</p>
-              <p>15500 р.</p>
+              <p class="catalog-price-initial">22500р.</p>
+              <p class="catalog-price-final">15500 р.</p>
+              <button class="catalog-by" type="button">Купить</button>
+              <button class="catalog-save" type="button">В закладки</button>
             </article>
           </li>
           <li>
@@ -144,8 +150,10 @@
                 <img src="img/product-2.jpg" width="218" height="170"
                   alt="Перфоратор BOSCH BFG 6000">
               </p>
-              <p>30500р.</p>
-              <p>25500 р.</p>
+              <p class="catalog-price-initial">30500р.</p>
+              <p class="catalog-price-final">25500 р.</p>
+              <button class="catalog-by" type="button">Купить</button>
+              <button class="catalog-save" type="button">В закладки</button>
             </article>
           </li>
           <li>
@@ -160,15 +168,17 @@
                 <img src="img/product-3.jpg" width="218" height="170"
                   alt="Перфоратор BOSCH BFG 2000">
               </p>
-              <p>12500р.</p>
+              <p class="catalog-price-final">12500р.</p>
+              <button class="catalog-by" type="button">Купить</button>
+              <button class="catalog-save" type="button">В закладки</button>
             </article>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="popular">
         <div>
           <h2>Популярные производители:</h2>
-          <a href="">Все производители</a>
+          <a class="popular-all" href="">Все производители</a>
         </div>
         <ul>
           <li>
@@ -205,25 +215,25 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="services">
         <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div>
           <ul>
             <li>
-              <a href="">Доставка</a>
+              <a class="services-all" href="">Доставка</a>
             </li>
             <li>
-              <a href="">Гарантия</a>
+              <a class="services-all" href="">Гарантия</a>
             </li>
             <li>
-              <a href="">Кредит</a>
+              <a class="services-all" href="">Кредит</a>
             </li>
           </ul>
         </div>
-        <div>
-          <p>Доставка</p>
+        <div class="services-item">
+          <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!<br>
@@ -231,8 +241,8 @@
             поднимая его на ваш этаж!
           </p>
         </div>
-        <div>
-          <p>Гарантия</p>
+        <div class="services-item">
+          <h3>Гарантия</h3>
           <p>
             Если купленный у нас товар поломается или заискрит,<br>
             а также в случае пожара, спровоцированным его возгоранием,<br>
@@ -241,12 +251,13 @@
             Дом уж восстановите сами.
           </p>
         </div>
-        <div>
-          <p>Кредит</p>
+        <div class="services-item">
+          <h3>Кредит</h3>
           <p>
             Залезть в долговую яму стало проще!<br>
             Кредитные консультанты придут вам на помощь.
           </p>
+          <a href="">Отправить заявку</a>
         </div>
       </section>
       <section class="section-info">

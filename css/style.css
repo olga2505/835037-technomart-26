@@ -39,6 +39,22 @@ a {
     border: none;
 }
 
+.search::-webkit-input-placeholder {
+    color:white;
+}
+
+.search::-moz-placeholder {
+    color:white;
+}
+
+.search:-moz-placeholder {
+    color:white;
+}
+
+.search:-ms-input-placeholder {
+    color:white;
+}
+
 .search:focus {
     background-color: white;
     outline: none;
@@ -189,6 +205,168 @@ a {
 .nav-item a:active {
     color: rgba(255, 255, 255, 0.5);
     background-color: #1d2739;
+}
+
+.items {
+    list-style: none;
+
+}
+
+.items-materials p,
+.items-tools p,
+.items-equipment p,
+.items-discount p,
+.items-delivery p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: white;
+}
+
+.items-materials {
+    background-color: #ffbf47;
+}
+
+.items-tools {
+    background-color: #3bbce3;
+}
+
+.items-equipment {
+    background-color: #dc91d8;
+}
+
+.items-discount {
+    background-color: #8ed78f;
+}
+
+.items-delivery {
+    background-color: #ffc047;
+}
+
+.items-materials a,
+.items-tools a,
+.items-equipment a,
+.items-discount a,
+.items-delivery a {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.1);
+} 
+
+.slider {
+    list-style: none;
+    background-color: black;
+}
+
+.slider h3 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.slider p {
+    font-size: 18px;
+    line-height: 1.33;
+    color: white;
+}
+
+.slider a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+  color: white;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.popular ul {
+    list-style: none;
+}
+
+.popular h2 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.popular-all {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+    color: white;
+    text-transform: uppercase;
+    background-color: #ee3643;
+}
+
+.popular div {
+    background-color: #f9f5f0;
+}
+
+
+
+
+
+.services h2{
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.services ul {
+    list-style: none;
+}
+
+.services-all {
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.43;
+    color: white;
+    box-shadow: 0px 1px 0 0 var(--dark), inset 0px 1px 0 0 #405069;
+    background-color: #32425c;
+}
+
+.services-all:focus {
+    color: #32425c;
+    background-color: white;
+    box-shadow: 0px 1px 0 0 var(--white), inset 0px 1px 0 0 var(--white);
+}
+
+.services-item h3 {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 0.67;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.services-item p {
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.services-item a {
+    color: white;
+    background-color: #ff5357;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+    text-transform: uppercase;
 }
 
 .section-info-title {
@@ -356,6 +534,14 @@ a {
     font-weight: 400;
 }
 
+.filtr h2 {
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.38;
+    text-transform: uppercase;
+}
+
 .filtr-list {
     font-family: PT Sans;
     font-size: 17px;
@@ -395,6 +581,20 @@ a {
     background-color: #ffffff;
 }
 
+.filtr-price legend {
+    font-family: PT Sans;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    text-transform: uppercase;
+}
+
+.filtr-price input {
+  font-family: PT Sans;
+  font-size: 17px;
+  line-height: 1.06;
+}
+
 .catalog {
     list-style: none;
 }
@@ -425,6 +625,66 @@ a {
     background-color: #ee3643;
     width: 75px;
 }
+
+.sorting ul {
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.sorting p {
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.38;
+    color: black;
+    text-transform: uppercase;
+}
+
+.sorting-list li:nth-child(1) a {
+    color: #ee3643;
+}
+
+.sorting-list li:nth-child(2) a,
+.sorting-list li:nth-child(3) a {
+    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+    text-decoration-color: #ee3643;
+}
+
+.pagination-item {
+    list-style: none;
+}
+
+.pagination-item a {
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 1.38;
+    color: black;
+    text-transform: uppercase;
+    font-weight: normal;
+    border: solid 1px #e5e5e5;
+}
+
+.pagination-item-current a {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.info-text h2 {
+    font-size: 30px;
+    line-height: 1;
+    font-family: Cuprum;
+    color: black;
+    font-weight: normal;
+}
+
+.info-text p {
+    font-size: 13px;
+    font-family: PT Sans;
+    color: black;
+    line-height: 1.85;
+} 
 
 .popup-cart {
     display: none;
