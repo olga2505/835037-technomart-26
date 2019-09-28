@@ -13,16 +13,16 @@
         <div class="user-navigation">
           <div class="wrap">
             <div class="user-navigation-inner">
-              <a  class="logo" href="index.html">
+              <div class="logo">
                 <img src="img/logo-technomart.svg" width="109" height="19"
                  alt="Логотип Техномарт">
-              </a>
+              </div>
               <form>
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
                 <input class="search" type="search" placeholder="Поиск:">
               </form>
               <a class="bookmarks" href="">Закладки: 0</a>
-              <a class="basket" ref="">Корзина: 0</a>
+              <a class="basket" href="">Корзина: 0</a>
               <a class="button-checkout" href="">Оформить заказ</a>
             </div>
           </div>
@@ -32,7 +32,7 @@
             <p class="info-description">Интернет-магазин<br> строительных материалов<br> и инструментов
                для ремонта</p>
             <div class="info-contacts">
-              <p class="info-phone">+7 (812) 555-05-55</p>
+              <a class="info-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
               <p class="info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <ul class="info-user">
@@ -92,8 +92,8 @@
               </li> -->
             </ul>
               <!-- <button type="button">Назад</button>
-              <button type="button">Вперед</button>
-            <a href="catalog.html">Открыть каталог</a> -->
+              <button type="button">Вперед</button> -->
+            <!-- <a href="catalog.html" aria-label="Открыть каталог"></a> -->
 
           </div>
           <ul class="items-element">
@@ -109,17 +109,15 @@
         </section>
         <section class="popular-product">
           <div>
-            <h2>Популярные товары:</h2>
-            <a class="popular-product-all" href="">Все популярные товары:</a>
+            <h2>Популярные товары</h2>
+            <a class="popular-product-all" href="">Все популярные товары</a>
           </div>
           <ul class="catalog-mini">
             <li>
               <article class="box-catalog-inner">
                 <h3>
-                  <a href="">
-                    Перфоратор BOSCH<br>
-                    BFG 9000
-                  </a>
+                  Перфоратор BOSCH<br>
+                  BFG 9000
                 </h3>
                 <p class="photo-product">
                   <img src="img/product-4.jpg" width="218" height="170"
@@ -127,17 +125,17 @@
                 </p>
                 <p class="catalog-price-initial">32500 Р.</p>
                 <p class="catalog-price-final">25500 Р.</p>
-                <button class="catalog-by" type="button">Купить</button>
-                <button class="catalog-save" type="button">В закладки</button>
+                <div class="actions">
+                  <a href="#" class="catalog-by">Купить</a>
+                  <a href="#" class="catalog-save">В закладки</a>
+                </div>
               </article>
             </li>
             <li>
               <article class="box-catalog-inner">
                 <h3>
-                  <a href="">
                   Перфоратор BOSCH<br>
                   BFG 3000
-                  </a>
                 </h3>
                 <p class="photo-product">
                   <img src="img/product-1.jpg" width="218" height="170"
@@ -145,17 +143,17 @@
                 </p>
                 <p class="catalog-price-initial">22500 Р.</p>
                 <p class="catalog-price-final">15500 р.</p>
-                <button class="catalog-by" type="button">Купить</button>
-                <button class="catalog-save" type="button">В закладки</button>
+                <div class="actions">
+                  <a href="#" class="catalog-by">Купить</a>
+                  <a href="#" class="catalog-save">В закладки</a>
+                </div>
               </article>
             </li>
             <li>
               <article class="box-catalog-inner">
                 <h3>
-                  <a href="">
                   Перфоратор BOSCH<br>
                   BFG 6000
-                  </a>
                 </h3>
                 <p class="photo-product">
                   <img src="img/product-2.jpg" width="218" height="170"
@@ -163,25 +161,27 @@
                 </p>
                 <p class="catalog-price-initial">30500 Р.</p>
                 <p class="catalog-price-final">25500 р.</p>
-                <button class="catalog-by" type="button">Купить</button>
-                <button class="catalog-save" type="button">В закладки</button>
+                <div class="actions">
+                  <a href="#" class="catalog-by">Купить</a>
+                  <a href="#" class="catalog-save">В закладки</a>
+                </div>
               </article>
             </li>
             <li>
               <article class="box-catalog-inner">
                 <h3>
-                  <a href="">
-                    Перфоратор BOSCH<br>
-                    BFG 2000
-                  </a>
+                  Перфоратор BOSCH<br>
+                  BFG 2000
                 </h3>
                 <p class="photo-product">
                   <img src="img/product-3.jpg" width="218" height="170"
                     alt="Перфоратор BOSCH BFG 2000">
                 </p>
                 <p class="catalog-price-final">12500 Р.</p>
-                <button class="catalog-by" type="button">Купить</button>
-                <button class="catalog-save" type="button">В закладки</button>
+                <div class="actions">
+                  <a href="#" class="catalog-by">Купить</a>
+                  <a href="#" class="catalog-save">В закладки</a>
+                </div>
               </article>
             </li>
           </ul>
@@ -370,7 +370,7 @@
             </div>
             <div class="box-email">
               <p class="footer-text">Обратная связь:</p>
-              <a class="footer-email" href="">mail@htmlacademy.ru</a>
+              <a class="footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="box-website">
               <p class="footer-text">Разработано —</p>
@@ -406,16 +406,16 @@
     </section>
 
     <section class="popup-registration">
-      <h2>Регистрация<h2>
+      <h2>Регистрация</h2>
         <p>Введите свой логин и пароль</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="user-login">Логин</label>
-          <input id="user-login" type="text" name="login" placeholder="email@example.com">
+          <label for="login-registration">Логин</label>
+          <input id="login-registration" type="text" name="login" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-password">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="••••••••">
+          <label for="password-registration">Пароль</label>
+          <input id="password-registration" type="password" name="password" placeholder="••••••••">
         </p>
         <button type="submit">
           Зарегистрироваться
