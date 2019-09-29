@@ -212,6 +212,10 @@ img {
     opacity: 1;
 }
 
+.basket:active::before {
+    opacity: 0.3;
+}
+
 .button-checkout {
     display: block;
     width: 150px;
