@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&#448;PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -57,7 +57,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <div class="wrap">
         <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
@@ -77,33 +76,40 @@
               <a  href="">Для стройки</a>
             </li>
           </ul>
-          <div class="slider-wrap">
-            <ul class="slider">
-              <li class="slider-drill">
-                <div class="title-slider">
-                  <h3>Дрели</h3>
-                  <p>Соседям на радость!</p> 
+          <div class="box-wrap">
+                  <div class="slider">
+                    <input type="radio" id="slider-1" name="toggle" checked>
+                    <input type="radio" id="slider-2" name="toggle">
+                    <div class="slider-controls">
+                      <label for="slider-1"></label>
+                      <label for="slider-2"></label>
+                    </div>
+                    <div class="slider-inner">
+                      <!-- <div class="slider-slides">
+                        <h3>Дрели</h3>
+                        <p>Соседям на радость!</p> 
+                      </div> -->
+                      <div class="slider-slides">
+                        <img src="img/slide-1.jpg" width="620" height="266"
+                        alt="Дрель">
+                        
+                          <!-- <h3>Перфораторы</h3>
+                          <p>Настоящие мужские игрушки</p> -->
+                        <img src="img/slide-2.jpg" width="620" height="266"
+                        alt="Дрель">
+                      </div>
+                      </ul>
+                    </div>
+                  <button class="back" type="button">
+                    <span class="visually-hidden">Назад</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
+                  </button>
+                  <button class="forward" type="button">
+                    <span class="visually-hidden">Вперед</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
+                  </button>
+                  <!-- <a class="open-catalog" href="catalog.html" aria-label="Открыть каталог">Открыть каталог</a> -->
                 </div>
-                <img src="img/slide-1.jpg" width="620" height="266"
-                alt="Дрель">
-              </li>
-              <!-- <li>
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <img src="img/slide-2.jpg" width="620" height="266"
-                alt="Дрель">
-              </li> -->
-            </ul>
-              <button class="back" type="button">
-                <span class="visually-hidden">Назад</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
-              </button>
-              <button class="forward" type="button">
-                <span class="visually-hidden">Вперед</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
-              </button>
-            <a class="open-catalog" href="catalog.html" aria-label="Открыть каталог">Открыть каталог</a>
-
           </div>
           <ul class="items-element">
             <li class="items-discount">
@@ -116,6 +122,8 @@
             </li>
           </ul>
         </section>
+      </div>
+      <div class="wrap">
         <section class="popular-product">
           <div>
             <h2>Популярные товары:</h2>
@@ -258,7 +266,7 @@
               </ul>
             </div>
             <div class="inner-services">
-              <div class="services-item">
+              <div class="services-item delivery">
                 <h3>Доставка</h3>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо<br>

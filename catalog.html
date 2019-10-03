@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&#448;PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -31,7 +31,7 @@
           <div class="info">
             <p class="info-description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
             <div class="info-contacts">
-              <p class="info-phone">+7 (812) 555-05-55</p>
+              <a class="info-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
               <p class="info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <ul class="user">
@@ -83,38 +83,58 @@
                 <div class="box-filtr-price">
                   <fieldset class="filtr-price">
                     <legend>Цена:</legend>
-                    <div>
-                      <label></label>
-                      <label></label>
-                    </div>
-                    <div>
-                      <input type="text" placeholder="0">
-                      <input type="text" placeholder="30000">
-                    </div>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                          <div class="scale">
+                            <div class="bar"></div>
+                          </div>
+                          <div class="toggle toggle-min"></div>
+                          <div class="toggle toggle-max"></div>    
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                            <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+                        </div>
+                      </div>
                   </fieldset>
                 </div>
                 <fieldset class="box-filtr-producer">
                   <legend class="filtr-list">Производители:</legend>
                   <ul>
                     <li>
-                      <input type="checkbox" name="bosch" id="filter-bosch" checked>
-                      <label for="filter-bosch">BOSCH</label>
+                      <label class="check option">
+                        <input class="check-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                        <span class="check-box"></span>
+                        BOSCH
+                      </label>
                     </li>
                     <li>
-                      <input type="checkbox" name="interskol" id="filter-interskol">
-                      <label for="filter-interskol">Интерскол</label>
+                      <label class="check option">
+                        <input class="check-input" type="checkbox" name="interskol" id="filter-interskol">
+                        <span class="check-box"></span>
+                        Интерскол
+                      </label>
                     </li>
                     <li>
-                      <input type="checkbox" name="makita" id="filter-makita" checked>
-                      <label for="filter-makita">Makita</label>
+                      <label class="check option">
+                        <input class="check-input" type="checkbox" name="makita" id="filter-makita" checked>
+                        <span class="check-box"></span>
+                        Makita
+                      </label>
                     </li>
                     <li>
-                      <input type="checkbox" name="dewalt" id="filter-dewalt">
-                      <label for="filter-dewalt">Dewalt</label>
+                      <label class="check option">
+                        <input class="check-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                        <span class="check-box"></span>
+                        Dewalt
+                      </label>
                     </li>
                     <li>
-                      <input type="checkbox" name="hitachi" id="filter-hitachi">
-                      <label for="filter-hitachi">Hitachi</label>
+                      <label class="check option">
+                        <input class="check-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                        <span class="check-box"></span>
+                        Hitachi
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -124,12 +144,18 @@
                   <legend class="filtr-list">Питание:</legend>
                   <ul>
                     <li>
-                      <input type="radio" name="product-group" value="accumulator" id="filter-accumulator" checked>
-                      <label for="filter-accumulator">Аккумуляторные</label>
+                      <label class="radio option">
+                        <input class="radio-input" type="radio" name="product-group" value="accumulator" id="filter-accumulator" checked>
+                        <span class="radio-box"></span>
+                        Аккумуляторные
+                      </label>
                     </li>
                     <li>
-                      <input type="radio" name="product-group" value="electric" id="filter-electric" >
-                      <label for="filter-electric">Сетевые</label>
+                      <label class="radio option">
+                        <input class="radio-input" type="radio" name="product-group" value="electric" id="filter-electric">
+                        <span class="radio-box"></span>
+                        Сетевые
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -145,9 +171,9 @@
             <div class="sorting">
               <p>Сортировка:</p>
               <ul class="sorting-list">
-                <li><a class="active" href="">По цене</a></li>
-                <li><a href="">По типу</a></li>
-                <li><a href="">По функционалу</a></li>
+                <li class="sorting-list-price"><a class="sorting-list-item active" href="">По цене</a></li>
+                <li class="sorting-list-type"><a class="sorting-list-item"  href="">По типу</a></li>
+                <li class="sorting-list-functions"><a class="sorting-list-item" href="">По функционалу</a></li>
               </ul>
               <ul class="up-dir">
                 <li class="sorting-up">
