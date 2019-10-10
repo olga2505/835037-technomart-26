@@ -365,6 +365,7 @@ img {
     padding-left: 52px;
     margin-top: 0px;
     margin-right: 40px;
+    width: 258px;
 }
 
 .info-contacts {
@@ -810,6 +811,7 @@ img {
     border: 2px solid white;
     border-radius: 50%;
     z-index: 100;
+    cursor: pointer;
 }
 
 .check-1 {
@@ -956,9 +958,10 @@ img {
 }
 
 .services p {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
+    width: 410px;
 }
 
 .addition {
@@ -1033,11 +1036,19 @@ img {
 }
 
 .services-item p {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     margin: 0px;
     font-size: 13px;
     line-height: 1.85;
     margin-bottom: 26px;
+}
+
+.delivery p {
+    width: 275px;
+}
+
+.credit p {
+    width: 300px;
 }
 
 .services-item a {
@@ -1104,15 +1115,17 @@ img {
 }
 
 .section-info-text {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: normal;
     line-height: 1.85;
     margin-bottom: 26px;
+    width: 519px;
 }
 
 .section-info p:last-of-type {
     margin-bottom: 20px;
+    width: 400px;
 }
 
 .section-info-delivery {
@@ -1152,7 +1165,7 @@ img {
 }
 
 
-.button-map {
+.button-feedback {
     display: block;
     width: 300px;
     min-height: 38px;
@@ -1177,10 +1190,11 @@ img {
 }
 
 .section-contacts-text {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
     margin-bottom: 32px;
+    width: 200px;
 }
 
 .map {
@@ -1382,6 +1396,7 @@ img {
 .footer-contacts p {
     margin: 0px;
     padding-left: 4px;
+    width: 345px;
 }
 
 .footer-nav-category {
@@ -1400,6 +1415,7 @@ img {
     color: white;
     line-height: 1.13;
     padding-left: 2px;
+    width: 228px;
 }
 
 .footer-email,
@@ -1594,7 +1610,7 @@ img {
 }
 
 .bredcrumbs a {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     color: #000000;
     line-height: 1.38;
@@ -1641,6 +1657,7 @@ img {
     padding: 0px;
     flex-direction: column;
     min-height: 316px;
+    width: 218px;
 }
 
 .box-catalog-inner:hover {
@@ -1673,7 +1690,7 @@ img {
 }
 
 .filtr h2 {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: normal;
     line-height: 1.38;
@@ -1681,7 +1698,7 @@ img {
 }
 
 .filtr-list {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
@@ -1690,7 +1707,7 @@ img {
 }
 
 .filtr li {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: normal;
     line-height: 23px;
@@ -1710,7 +1727,7 @@ img {
 }
 
 .filtr-batton {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: normal;
     line-height: 1.38;
@@ -1756,7 +1773,7 @@ img {
 }
 
 .filtr-price legend {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
@@ -1819,7 +1836,7 @@ img {
     background-color: #f7f3ec;
     border: none;
     border-radius: 3px;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 1.06;
 }
@@ -2053,11 +2070,12 @@ img {
 
 .catalog h3,
 .catalog-mini h3 {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.11;
     color: black;
+    padding: 0 30px;
 }
 
 .catalog li,
@@ -2087,7 +2105,7 @@ img {
 }
 
 .catalog-price-initial {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.06;
@@ -2101,7 +2119,7 @@ img {
 }
 
 .catalog-price-final {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.06;
@@ -2149,7 +2167,7 @@ img {
 }
 
 .sorting p {
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: normal;
     line-height: 1.38;
@@ -2253,7 +2271,7 @@ img {
     display: block;
     text-align: center;
     padding: 10px;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.38;
     color: black;
@@ -2265,26 +2283,6 @@ img {
     border-radius: 3px;
     border: solid 1px #e5e5e5;
 }
-
-
-
-
-/* .pagination-item a {
-    font-family: PT Sans;
-    font-size: 13px;
-    line-height: 1.38;
-    color: black;
-    text-transform: uppercase;
-    font-weight: normal;
-    border: solid 1px #e5e5e5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 38px;
-    min-height: 38px;
-    border-radius: 3px;
-    border: solid 1px #e5e5e5;
-} */
 
 .pagination-item a:hover {
     border-color:  #bdc6ca;
@@ -2336,7 +2334,7 @@ img {
 
 .info-text p {
     font-size: 13px;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: black;
     line-height: 1.85;
     margin: 0px;
@@ -2404,15 +2402,15 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-map {
-    position: relative;
+    position: fixed;
     background-color: #ffffff;
     width: 940px;
     height: 446px;
-    top: -765px;
+    top: 200px;
     left: 50%;
     margin-left: -470px;
     box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
-    display: none;       /* ------------временно -----------------*/
+    display: none;       
 }
 
 .exit-map {
@@ -2432,18 +2430,17 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-cart {
-    display: block;
+    position: fixed;
     width: 620px;
     height: 283px;
     border-top: 7px solid #ee3643;
-    position: fixed;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-    top: 410px;
+    top: 235px;
     left: 50%;
     margin-left: -310px;
     background-color: #ffffff;
-    display: none;       /* ------------временно -----------------*/
-
+    z-index: 1000;
+    display: none;       
 }
 
 .exit-contacts {
@@ -2543,7 +2540,57 @@ input[type="radio"].visually-hidden {
     left: 50%;
     margin-left: -310px;
     background-color: #ffffff;
-    display: none;       /* ------------временно -----------------*/
+    z-index: 1000;
+    display: none;      
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+}
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+  }
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .popup-contacts div {
@@ -2582,12 +2629,6 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;
     color: white;
     border-radius: 3px;
-}
-
-/* ------------------временно------------------- */
-.popup-login,
-.popup-registration {
-    display: none;
 }
 
 .popup-contacts-wrap {
