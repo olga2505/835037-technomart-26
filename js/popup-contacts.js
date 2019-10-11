@@ -11,10 +11,11 @@
 
       var isStorageSupport = true;
       var storage = "";
+      var storageMail = "";
       
-      // если localStorage отключен. Как сюда добавить 2-е поле (почту)
       try {
         storage = localStorage.getItem("userName");
+        storageMail = localStorage.getItem("userEmail");
       } catch (err) {
         isStorageSupport = false;
       }
@@ -26,14 +27,17 @@
       
         if (storage) {
           userName.value = storage;
-          userEmail.focus();
+          if (storageMail) {
+            userEmail.value = storageMail;
           } else {
-            userName.focus();
-          } 
-          });
+            userEmail.focus();
+          }
+          text.focus();
+        } else {
+          userName.focus();
+        }
+      });
             
-      // как добавить автозаполнение email
-
       close.addEventListener("click", function (evt) {
       evt.preventDefault();
       popupContacts.classList.remove("modal-show");
@@ -41,16 +45,15 @@
     });
 
       form.addEventListener("submit", function (evt) {
-        if (!userName.value || !userEmail.value || !text.value) {
+        if (!userName.value || !userEmail.value) {
           evt.preventDefault();
-          // popupContacts.classList.remove("modal-error");
-          // popup.offsetWidth = popup.offsetWidth;
+          popupContacts.classList.remove("modal-error");
+          popupContacts.offsetWidth = popupContacts.offsetWidth;
           popupContacts.classList.add("modal-error");
         } else {
               if (isStorageSupport) {
           localStorage.setItem("userName", userName.value);
           localStorage.setItem("userEmail", userEmail.value);
-          // не записывается в localStorage почта
          } 
         }
       });
@@ -63,3 +66,5 @@
       }
     }
   });
+
+       

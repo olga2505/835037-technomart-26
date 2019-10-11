@@ -777,7 +777,7 @@ img {
   display: block;
 }
 
-.arrow::before {
+.arrow {
     content: "";
     position: absolute;
     width: 22px;
@@ -789,12 +789,16 @@ img {
     cursor: pointer;
 }
 
-.back::before {
+.arrow:focus {
+    outline: 1px solid red;
+}
+
+.back{
     left: 25px;
     background-image: url("../img/icon-left.svg");
 }
 
-.next::before {
+.next {
     right: 20px;
     background-image: url("../img/icon-right.svg");
 }

@@ -1,7 +1,7 @@
 var cartLink = document.querySelector(".catalog-by");
 
 var cartPopup = document.querySelector(".popup-cart");
-var cartClose = mapPopup.querySelector(".exit-cart");
+var cartClose = cartPopup.querySelector(".exit-cart");
 
 cartLink.addEventListener("click", function (evt) {
   evt.preventDefault();

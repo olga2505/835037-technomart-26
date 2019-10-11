@@ -81,8 +81,8 @@
               <div class="slider-inner">
                 <input class="visually-hidden" type="radio" id="slider-1" name="toggle" checked>
                 <input class="visually-hidden" type="radio" id="slider-2" name="toggle">
-                <label class="slider-check check-1" for="slider-1"></label>
-                <label class="slider-check check-2" for="slider-2"></label>
+                <label class="slider-check check-1" for="slider-1" tabindex="0" ></label>
+                <label class="slider-check check-2" for="slider-2" tabindex="0"></label>
                 <div class="slider-slides slider-slides-1 ">
                   <div class="slide-content">
                     <h3>Дрели</h3>
@@ -104,8 +104,8 @@
                   </figure>
                 </div>
               </div>
-              <label class="arrow back" for="slider-1"></label>
-              <label class="arrow next" for="slider-2"></label>
+              <label class="arrow back" for="slider-1" tabindex="0"></label>
+              <label class="arrow next" for="slider-2" tabindex="0"></label>
             </div>
           </div>
           <ul class="items-element">
@@ -381,11 +381,11 @@
         <div class="popup-contacts-wrap">
           <p class="appointment-name">
             <label for="appointment-name">Ваше имя:</label>
-            <input id="appointment-name" type="text" name="user-name" placeholder="Имя Фамилия">
+            <input id="appointment-name" type="text" name="user-name" placeholder="Имя Фамилия" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)">
           </p>
           <p class="appointment-name">
             <label for="appointment-email">Ваш e-mail:</label>
-            <input id="appointment-email" type="text" name="user-email"  placeholder="email@example.com">
+            <input id="appointment-email" type="email" name="user-email"  placeholder="email@example.com" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})">
           </p>
           <p class="appointment-text">
             <label for="appointment-text">Текст письма</label>
@@ -404,7 +404,7 @@
 
     <section class="popup-map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570715994247!5m2!1sru!2sru" width="940" height="446" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570715994247!5m2!1sru!2sru" width="940" height="446"></iframe>
       <button class="exit-map" type="button">
         <span class="visually-hidden">Закрыть</span>
         <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" fill="#ee3643" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg>
