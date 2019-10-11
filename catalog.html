@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-normalize.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -13,9 +14,8 @@
         <div class="user-navigation">
           <div class="wrap">
             <div class="user-navigation-inner">
-              <a  class="logo" href="index.html">
-                <img src="img/logo-technomart.svg" width="109" height="19"
-                    alt="Логотип Техномарт">
+              <a class="logo" href="index.html">
+                <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
               </a>
               <form class="search-form">
                 <input class="search" type="search" placeholder="Поиск:">
@@ -66,9 +66,10 @@
       <div class="wrap">
         <h1 class="visually-hidden">Каталог</h1>
         <ol class="bredcrumbs">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="">Перфораторы</a></li>
+          <li><a class="link-home" href="index.html"></a></li>
+          <li><a class="link-catalog" href="catalog.html">Каталог</a></li>
+          <li><a class="link-tools" href="">Инструмент</a></li>
+          <li><a class="link-puncher" href="">Перфораторы</a></li>
         </ol>
         <div class="box-catalog-title">
         <h2 class="catalog-title">Перфораторы</h2>
@@ -420,6 +421,6 @@
         </div>
       </div>  
     </section>
-    <script src="js/popup-cart.js"></script>
+    <script src="js/min-popup-cart.js"></script>
   </body>
 </html>
