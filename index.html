@@ -6,7 +6,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/min-normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -240,11 +240,13 @@
             </div>
             <div class="nav-services">
               <input class="visually-hidden check-delivery" type="radio" name="services" id="delivery" checked>
-              <label class="button-delivery addition" for="delivery">Доставка</label>
               <input class="visually-hidden check-guarantee" type="radio" name="services" id="guarantee">
-              <label class="button-guarantee addition" for="guarantee">Гарантия</label>
               <input class="visually-hidden check-credit" type="radio" name="services" id="credit">
-              <label class="button-credit addition" for="credit">Кредит</label>
+              <div class="nav-services-wrap">
+                <label class="button-delivery addition" for="delivery">Доставка</label>
+                <label class="button-guarantee addition" for="guarantee">Гарантия</label>
+                <label class="button-credit addition" for="credit">Кредит</label>
+              </div>
               <div class="services-item delivery">
                 <h3>Доставка</h3>
                 <p>
@@ -391,7 +393,7 @@
             <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" fill="#ee3643" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg>
           </button>
         </div>
-      </div>  
+      </div>
     </section>
     <section class="popup-contacts">
       <h2 class="visually-hidden">Обратная связь</h2>
@@ -431,7 +433,7 @@
 
     <script src="js/min-popup-contacts.js"></script>
     <script src="js/min-popup-map.js"></script>
-    <script src="js/color-add.js"></script>
+    <script src="js/min-color-add.js"></script>
 
   </body>
 </html>

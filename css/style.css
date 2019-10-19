@@ -835,7 +835,6 @@ img {
     outline: 2px solid red;
 }
 
-
 .open-catalog {
     display: block;
     font-size: 14px;
@@ -964,7 +963,6 @@ img {
 .services {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 54px;
 }
 
 .title-services {
@@ -1011,8 +1009,8 @@ img {
 }
 
 .nav-services {
+    display: flex;
     position: relative;
-    padding-bottom: 99px;
     max-width: 240px;
 }
 
@@ -1029,19 +1027,23 @@ img {
 }
 
 .services-item {
-    position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     width: 400px;
-    margin-bottom: 90px;
-    top: 0;
-    left: 321px;
+    margin-bottom: 30px;
     display: none;
+    position: relative;
+    z-index: 10;
 }
 
-#delivery:checked ~ .button-delivery,
-#guarantee:checked ~ .button-guarantee,
-#credit:checked ~ .button-credit {
+.nav-services-wrap {
+    margin-right: 80px;
+    padding-bottom: 153px;
+}
+
+#delivery:checked ~ .nav-services-wrap .button-delivery,
+#guarantee:checked ~ .nav-services-wrap .button-guarantee,
+#credit:checked ~ .nav-services-wrap .button-credit {
     background-color: white;
     color: #32425c;
 }
@@ -1069,14 +1071,11 @@ img {
     margin: 0;
     font-size: 13px;
     line-height: 1.85;
-    margin-bottom: 26px;
-    position: relative;
-    z-index: 10;
+    padding-bottom: 26px;
 }
 
 .delivery p {
     width: 275px;
-
 }
 
 .credit p {
@@ -1094,7 +1093,7 @@ img {
     line-height: 1.29;
     text-transform: uppercase;
     text-align: center;
-    padding: 11px 10px;
+    padding: 10px 10px;
     border-radius: 3px;
     position: relative;
     z-index: 10;
@@ -2437,6 +2436,7 @@ input[type="radio"].visually-hidden {
     margin-left: -470px;
     box-shadow: 0 0 14.72px 1.28px rgba(47, 42, 43, 0.5);
     display: none;
+    z-index: 1000;
 }
 
 .exit-map {
