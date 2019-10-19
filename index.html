@@ -22,9 +22,9 @@
                 <input class="search" type="search" placeholder="Поиск:" aria-label="Поиск">
                 <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
               </form>
-              <a class="bookmarks" href="#">Закладки: 0</a>
-              <a class="basket" href="#">Корзина: 0</a>
-              <a class="button-checkout" href="">Оформить заказ</a>
+              <a class="bookmarks" href="#">Закладки:&nbsp;<span>0</span></a>
+              <a class="basket" href="#">Корзина:&nbsp;<span>0</span></a>
+              <a class="button-checkout" href="#">Оформить заказ</a>
             </div>
           </div>
         </div>
@@ -81,8 +81,8 @@
             <div class="slider">
               <div class="slider-inner">
                 <input class="visually-hidden radio-slider" type="radio" id="slider-1" name="toggle" checked>
-                <input class="visually-hidden radio-slider" type="radio" id="slider-2" name="toggle">
                 <label class="arrow back" for="slider-1" aria-label="назад слайд"></label>
+                <input class="visually-hidden radio-slider" type="radio" id="slider-2" name="toggle">
                 <label class="arrow next" for="slider-2" aria-label="вперёд слайд"></label>
                 <label class="slider-check check-1" for="slider-1"></label>
                 <label class="slider-check check-2" for="slider-2"></label>
@@ -107,7 +107,6 @@
                   </figure>
                 </div>
               </div>
-              
             </div>
           </div>
           <ul class="items-element">
@@ -201,7 +200,7 @@
         <section class="popular-producer">
           <div>
             <h2>Популярные производители:</h2>
-            <a class="popular-producer-all button-effect" href="">Все производители</a>
+            <a class="popular-producer-all button-effect" href="#">Все производители</a>
           </div>
           <ul>
             <li>
@@ -214,7 +213,7 @@
               <a class="card" href="#"><img src="img/de-walt.png" width="146" height="44" alt="DeWalt"></a>
             </li>
             <li>
-              <a class="card" href=""><img src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
+              <a class="card" href="#"><img src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
             </li>
             <li>
               <a class="card" href="#"><img src="img/hitachi.png" width="169" height="31" alt="Hitachi"></a>
@@ -310,7 +309,7 @@
             <a class="button-feedback button-effect" href="form.html">Заблудились? Напишите нам!</a>
           </section>
         </div>
-    </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="box-footer-top">
@@ -322,11 +321,11 @@
                   alt="Логотип Техномарт">
               </a>
               <ul class="footer-nav-top">
-                <li><a class="footer-nav-item" href="">Компания</a></li>
-                <li><a class="footer-nav-item" href="">Новости</a></li>
+                <li><a class="footer-nav-item" href="#">Компания</a></li>
+                <li><a class="footer-nav-item" href="#">Новости</a></li>
                 <li><a class="footer-nav-item" href="catalog.html">Каталог</a></li>
-                <li><a class="footer-nav-item" href="">Доставка</a></li>
-                <li><a class="footer-nav-item" href="">Контакты</a></li>
+                <li><a class="footer-nav-item" href="#">Доставка</a></li>
+                <li><a class="footer-nav-item" href="#">Контакты</a></li>
               </ul>
             </div>
             <div class="inner-footer-contacts">
@@ -360,23 +359,40 @@
             <div class="box-socials">
               <h2 class="visually-hidden">Мы в соцсетях</h2>
               <ul class="socials">
-                <li><a class="social-button-vk" href="#" aria-label="ВКонтакте"></a></li>
-                <li><a class="social-button-fb" href="#" aria-label="Фейсбук"></a></li>
-                <li><a class="social-button-inst" href="#" aria-label="Инстаграм"></a></li>
+                <li><a class="social-button social-button-vk" href="#" aria-label="ВКонтакте"></a></li>
+                <li><a class="social-button social-button-fb" href="#" aria-label="Фейсбук"></a></li>
+                <li><a class="social-button social-button-inst" href="#" aria-label="Инстаграм"></a></li>
               </ul>
             </div>
-            <div class="box-email">
-              <p class="footer-text">Обратная связь:</p>
-              <a class="footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="box-website">
-              <p class="footer-text">Разработано —</p>
-              <a class="footer-website" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <div class="footer-wrap">
+              <div class="box-email">
+                <p class="footer-text">Обратная связь:</p>
+                <a class="footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>
+              <div class="box-website">
+                <p class="footer-text">Разработано —</p>
+                <a class="footer-website" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <section class="popup-cart">
+      <div class="popup-cart-wrap">
+        <h2>Товар добавлен в корзину!</h2>
+          <div class="popup-cart-inner">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <button class="button-checkout-popup" type="button">Оформить заказ</button>
+            <button class="button-continue" type="button">Продолжить покупки</button>
+          </form>
+          <button class="exit-cart" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" fill="#ee3643" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg>
+          </button>
+        </div>
+      </div>  
+    </section>
     <section class="popup-contacts">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="form-conacts" action="https://echo.htmlacademy.ru" method="post">
